@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+<favicon scr=""></favicon>
 <html>
 <head>
-<title>KK Groups</title>
+<title>KK Group's</title>
 
 <style>
+
 body{
 font-family:Arial;
 text-align:center;
@@ -17,25 +19,86 @@ margin:10px;
 display:inline-block;
 background:white;
 border-radius:10px;
-box-shadow:0 0 10px gray;
+box-shadow:0 0 10px grey;
+cursor:pointer;
 }
-</style>
 
+.box:hover{
+background:#e6e6e6;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>KK Groups Learning Community</h1>
+<h1>KK Group's </h1>
+<h2>Learning Community</h2>
 
-<div class="box">Editor</div>
-<div class="box">Web Developer</div>
-<div class="box">Python</div>
-<div class="box">Java</div>
-<div class="box">JavaScript</div>
-<div class="box">Photography</div>
-<div class="box">Cameraman</div>
-<div class="box">Actor</div>
-<div class="box">YouTube Creator</div>
+<div class="box">
+<a href="editor.html">🎬Editor</a>
+</div>
+
+<div class="box" onclick="openPage('webdev.html')">
+💻 Web Developer
+</div>
+
+<div class="box" onclick="openPage('python.html')">
+🐍 Python
+</div>
+
+<div class="box" onclick="openPage('java.html')">
+☕ Java
+</div>
+
+<div class="box" onclick="openPage('javascript.html')">
+⚡ JavaScript
+</div>
+
+<div class="box" onclick="openPage('photography.html')">
+📷 Photography
+</div>
+
+<div class="box" onclick="openPage('cameraman.html')">
+🎥 Cameraman
+</div>
+
+<div class="box" onclick="openPage('actor.html')">
+🎭 Actor
+</div>
+
+<div class="box" onclick="openPage('youtube.html')">
+▶ YouTube Creator
+</div>
+
+<script>
+
+function openPage(page){
+window.location.href = page;
+}
+
+</script>
 
 </body>
 </html>
+<form>
+
+Name:
+<input type="text" required><br><br>
+
+Contact:
+<input type="number" required><br><br>
+
+Email:
+<input type="email" required><br><br>
+
+Upload Sample:
+<input type="file"><br><br>
+
+<button type="submit">
+Submit
+</button>
+
+</form>
+
+<p>Thank you for your submission</p>
